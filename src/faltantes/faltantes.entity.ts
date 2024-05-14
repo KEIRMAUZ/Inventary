@@ -1,8 +1,8 @@
-import { Column, Entity,PrimaryColumn } from 'typeorm'
+import { Column, Entity,PrimaryColumn, PrimaryGeneratedColumn} from 'typeorm'
 @Entity({name:'Faltantes'})
 export class Faltante{
 
-    @PrimaryColumn({type:'int',unique:true})
+    @PrimaryGeneratedColumn({type:'int'})
     ID_faltantes:number
 
     @Column({type:'int'})

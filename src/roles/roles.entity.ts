@@ -3,7 +3,7 @@ import { Entity, Column, PrimaryColumn,PrimaryGeneratedColumn} from 'typeorm'
 @Entity({name:'Roles'})
 export class Roles{
 
-    @PrimaryColumn({type:'int',unique:true})
+    @PrimaryGeneratedColumn({type:'int'})
     ID_roles:number
 
     @Column({type:'varchar',length:30})

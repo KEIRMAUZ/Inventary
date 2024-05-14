@@ -2,7 +2,7 @@ import { Column, Entity,PrimaryColumn,PrimaryGeneratedColumn } from 'typeorm'
 
 @Entity({name:'Categorys'})
 export class Categorys {
-    @PrimaryGeneratedColumn({type:'int',unique:true})
+    @PrimaryGeneratedColumn({type:'int'})
     ID_category:number
 
     @Column({type:'varchar',length:30})

@@ -1,8 +1,8 @@
 import { type } from 'os'
-import { Entity, Column, PrimaryColumn} from 'typeorm'
+import { Entity, Column, PrimaryColumn, PrimaryGeneratedColumn} from 'typeorm'
 @Entity({name:'Person'})
 export class Person {
-    @PrimaryColumn({type:'int',unique:true})
+    @PrimaryGeneratedColumn({type:'int'})
     ID_person:number
 
     @Column({type:'int'})
